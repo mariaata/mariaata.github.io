@@ -12,7 +12,7 @@
 
 html{
     scroll-behavior: smooth;
-    cursor: url('cursor.png'), auto;
+    
 }
 
 body{
@@ -323,4 +323,20 @@ nav.right a span{
 }
 .title{
     color: #FFFF;
+}
+
+.Cornell-Tech {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.Cornell-Tech img {
+    width: 80%;  
+    height: auto;
+    max-width: 800px; 
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px; 
 }
