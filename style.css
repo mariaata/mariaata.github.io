@@ -12,11 +12,11 @@
 
 html{
     scroll-behavior: smooth;
+    cursor: url('cursor.png'), auto;
 }
 
 body{
     cursor: url('cursor.png'), auto;
-
     font-family: 'Poppins', sans-serif;
     background-color: var(--background-color);
 }
@@ -286,3 +286,41 @@ nav.right a span{
     }
 }
 
+#contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: auto;  /* Make sure it fits content */
+    padding: 20px 0;
+    color: rgb(163, 163, 163); /* Make all text inside contact section white */
+}
+.contact-info-upper-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;  /* Ensures everything aligns properly */
+    border-radius: 2rem;
+    border: 0.1rem solid rgb(163, 163, 163);
+    background-color: rgb(250, 250, 250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+  
+  .contact-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+  }
+  
+  .contact-info-upper-container .contact-icon {
+    margin-right: 0.8rem;  /* Add space between the icon and email */
+}
+
+.contact-info-upper-container p {
+    font-size: 1rem;  /* Adjust font size if needed */
+}
+.title{
+    color: #FFFF;
+}
