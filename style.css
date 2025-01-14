@@ -15,6 +15,8 @@ html{
 }
 
 body{
+    cursor: url('cursor.png'), auto;
+
     font-family: 'Poppins', sans-serif;
     background-color: var(--background-color);
 }
@@ -265,3 +267,22 @@ nav.right a span{
     margin-top: 5px; 
     margin-bottom: 15px; 
 }
+.I-am {
+    color: var(--text-color); 
+}
+
+.typewriter {
+    color: var(--link-color); 
+    text-shadow: 0 0 10px var(--link-color);  /* Optional: add a glow effect */
+    border-right: 2px solid var(--link-color); /* Simulate cursor */
+    display: inline-block;
+    padding-right: 2px;
+    animation: blink 0.7s steps(1) infinite; /* Add blinking cursor effect */
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
