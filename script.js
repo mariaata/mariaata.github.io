@@ -11,30 +11,29 @@ const textElements = document.querySelector(".typewriter");
 let textIndex = 0;
 let characterIndex = 0;
 
-// Check if the element exists
-if (!textElements) {
+if (!textElements) {// Check if the elm exists
     console.error('Element with class "typewriter" not found!');
 }
 
 function typeWriter() {
     if (characterIndex < text[textIndex].length) {
-        textElements.innerHTML += text[textIndex].charAt(characterIndex);  // Type one character at a time
+        textElements.innerHTML += text[textIndex].charAt(characterIndex);  
         characterIndex++;
         setTimeout(typeWriter, speed);
     } else {
-        setTimeout(eraseText, 1000);  // Erase after typing is done
+        setTimeout(eraseText, 1000);  
     }
 }
 
 function eraseText() {
     if (textElements.innerHTML.length > 0) {
-        textElements.innerHTML = textElements.innerHTML.slice(0, -1);  // Remove one character at a time
-        setTimeout(eraseText, 50);  // Continue erasing
+        textElements.innerHTML = textElements.innerHTML.slice(0, -1);  // one char at a time, erases
+        setTimeout(eraseText, 50);  // continues erasing
     } else {
-        textIndex = (textIndex + 1) % text.length;  // Move to the next text in the array
-        characterIndex = 0;  // Reset character index
-        setTimeout(typeWriter, 500);  // Start typing again after erasing
+        textIndex = (textIndex + 1) % text.length;  
+        characterIndex = 0;  
+        setTimeout(typeWriter, 500);  
     }
 }
 
-window.onload = typeWriter;  // Start typing once the page loads
+window.onload = typeWriter; 
