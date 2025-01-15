@@ -2,8 +2,10 @@ const text = [
     "an aspiring Product Manager",
     "a student at Barnard of Columbia", 
     "passionate about user experience", 
+    "a music lover",
     "a problem solver", 
-    "a foodie & travel lover!"
+    "a foodie & travel lover!", 
+    "a data enthusiast"
 ];
 let speed = 100;
 const textElements = document.querySelector(".typewriter");
