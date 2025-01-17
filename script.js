@@ -4,7 +4,7 @@ const text = [
     "passionate about user experience", 
     "a music lover",
     "a problem solver", 
-    "a foodie & travel lover!", 
+    "a foodie & travel lover", 
     "a data enthusiast"
 ];
 let speed = 100;
