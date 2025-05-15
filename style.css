@@ -288,49 +288,47 @@ html {
         border-color: transparent;
     }
 }
-
-/* Contact Section Styling */
 #contact {
-    text-align: center; /* Center-align the content */
-    padding: 50px 20px; /* Add padding for spacing */
-    background-color: #1a1a1a; /* Dark background for contrast */
-    color: #ffffff; /* White text for readability */
+    text-align: center; 
+    padding: 50px 20px; 
+    background-color: #1a1a1a; 
+    color: #ffffff; 
 }
 
 .section-title {
-    font-size: 2rem; /* Larger font size for the heading */
-    margin-bottom: 20px; /* Space below the heading */
-    color: #ffffff; /* White text */
+    font-size: 2rem; 
+    margin-bottom: 20px; 
+    color: #ffffff; 
 }
 
 .contact-info-upper-container {
-    display: inline-flex; /* Center the container */
-    align-items: center; /* Align items vertically */
-    background-color: #333; /* Darker background for the button */
-    padding: 15px 25px; /* Add padding for a larger button */
-    border-radius: 10px; /* Rounded corners */
-    transition: background-color 0.3s ease; /* Smooth hover effect */
+    display: inline-flex; 
+    align-items: center; 
+    background-color: #333; 
+    padding: 15px 25px; 
+    border-radius: 10px; 
+    transition: background-color 0.3s ease;
 }
 
 .contact-info-upper-container:hover {
-    background-color: #444; /* Slightly lighter on hover */
+    background-color: #444; 
 }
 
 .contact-icon {
-    margin-right: 10px; /* Space between icon and text */
-    font-size: 1.5rem; /* Larger icon size */
-    color: #ffffff; /* White icon */
+    margin-right: 10px; 
+    font-size: 1.5rem; 
+    color: #ffffff; 
 }
 
 .contact-button {
-    font-size: 1.2rem; /* Larger font size for the button text */
-    color: #ffffff; /* White text */
-    text-decoration: none; /* Remove underline */
-    transition: color 0.3s ease; /* Smooth hover effect */
+    font-size: 1.2rem; 
+    color: #ffffff; 
+    text-decoration: none; 
+    transition: color 0.3s ease;
 }
 
 .contact-button:hover {
-    color: #0F59D2; /* Change text color on hover */
+    color: #0F59D2; 
 }
 .title{
     color: #FFFF;
@@ -345,6 +343,23 @@ html {
 }
 
 .Cornell-Tech img {
+    width: 80%;  
+    height: auto;
+    max-width: 800px; 
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px; 
+}
+
+.UI-Group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    word-wrap: break-word;
+}
+
+.UI-Group img {
     width: 80%;  
     height: auto;
     max-width: 800px; 
