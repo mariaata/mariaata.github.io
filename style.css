@@ -1,7 +1,10 @@
-:root{
-    --text-color: #FFFFFF;
-    --link-color: #0F59D2;
-    --background-color: #000000;
+:root {
+    --background-color: #0e0c0c; 
+    --text-color: #F8F8F8; 
+    --link-color: #7BA4DB; 
+    --link-hover: #95BCF5;/*ai because i couldn't figure out a color scheme /:*/
+    --card-bg: #383838; 
+    --border-color: #454545; 
 }
 
 *{
@@ -323,13 +326,13 @@ html {
 }
 
 .project-content a {
-    color: #0F59D2;
+    color: #7BA4DB;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .project-content a:hover {
-    color: #3a7be0;
+    color: #7BA4DB;
 }
 
 .star {
@@ -424,7 +427,7 @@ html {
 }
 
 .contact-button:hover {
-    color: #0F59D2; 
+    color: #7BA4DB; 
 }
 .title{
     color: #FFFF;
