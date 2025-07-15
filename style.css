@@ -80,12 +80,14 @@ nav .right a:last-child {
 }
 
 .hero-section h2 {
-    font-size: 45px;
-    margin-bottom: 20px;
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+    line-height: 1.2;
 }
 
 .hero-section h3.I-am {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    margin-top: 0; 
     margin-bottom: 20px;
 }
 
