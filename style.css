@@ -2,265 +2,235 @@
     --background-color: #0e0c0c; 
     --text-color: #F8F8F8; 
     --link-color: #7BA4DB; 
-    --link-hover: #95BCF5;/*ai because i couldn't figure out a color scheme /:*/
+    --link-hover: #95BCF5;
     --card-bg: #383838; 
     --border-color: #454545; 
 }
 
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
-    
 }
 
-body{
+body {
     cursor: url('cursor.png'), auto;
     font-family: 'Poppins', sans-serif;
     background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
 }
 
-a{
+a {
     color: var(--link-color);
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-/* navigation */
-nav{
+a:hover {
+    color: var(--link-hover);
+}
+
+/* Navigation */
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 50px;
     height: 80px;
 }
-nav .left a{
+
+nav .left a {
     color: var(--text-color);
     font-size: 22px;
     font-weight: 600;
 }
-nav .right a{
+
+nav .right a {
     color: var(--text-color);
     margin: 0 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
 }
 
-nav .right a:last-child{
+nav .right a:last-child {
     color: var(--background-color);
     background-color: var(--text-color);
     padding: 5px 15px;
     border-radius: 5px;
 }
 
-nav.right a span{
-    margin-left: 5px;
-}
-
-.hero-section{
+/* Hero Section */
+.hero-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 50px;
-    margin: 50px 0;
-    margin-bottom: 100px;
+    margin: 50px 0 100px;
     gap: 40px;
 }
 
-.hero-section .text{
+.hero-section .text {
     flex: 5;
 }
 
-.hero-section .text .links{
-    margin-top: 25px;
+.hero-section h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
 }
 
-.hero-section .text .links a{
-    display: inline-block;
-    padding: 5px 10px;
+.hero-section h3.I-am {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    margin-bottom: 25px;
+    max-width: 700px;
+}
+
+.hero-section .links {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.hero-section .links a {
+    padding: 8px 15px;
     border: 2px solid var(--link-color);
-    border-radius: 5px;;
-    margin-right: 5px;
-    margin-bottom: 10px;
-    transition: .1s;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
 }
-.hero-section .text .links a:hover{
+
+.hero-section .links a:hover {
     color: var(--text-color);
-    border:2px solid var(--text-color);
+    border-color: var(--text-color);
 }
+
 .hero-section .headshot {
     flex: 2;
     display: flex;
-    justify-content: right;
-  }
-  
+    justify-content: flex-end;
+}
+
 .hero-section .headshot img {
     width: 350px;
-    border-radius: 55%;
-}
-
-.hero-section p{
-    color: var(--text-color); /* Make sure text is white */
-}
-
-.hero-section h2{
-    font-size: 45px;
-    color: var(--text-color); /* Make sure text is white */
-}
-
-.skills-section{
-    padding: 0 50px;
-    margin-bottom: 100px;
-}
-
-.skills-section h2{
-    text-align: center;
-    font-size: 30px;
-    color: #FFFFFF;
-}
-
-.skills-section .text{
-    text-align: center;
-    margin-bottom: 15px;
-    color: #FFFFFF;
-}
-.skills-section .cells{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.skills-section .cells .cell {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    margin: 10px;
-    padding: 10px 20px;
-    border: 1.5px solid #d3d3d3;  
-    border-radius: 5px;
-    background-color: #FFFFFF; 
-    color: #000000; 
-}
-
-/*makes some space between logos and what I wrote*/
-.skills-section .cells .cell i {
-    margin-right: 10px;  
-}
- 
-.skills-section{
-    padding: 0 20px;
-}
-.skills-section .cells .cell span{
-    font-size: 16px;
-}
-
-.spoken-skills-section{
-    padding: 0 50px;
-    margin-bottom: 100px;
-}
-
-.spoken-skills-section h2{
-    text-align: center;
-    font-size: 30px;
-    color: #FFFFFF;
-}
-
-.spoken-skills-section .text{
-    text-align: center;
-    margin-bottom: 15px;
-    color: #FFFFFF;
-}
-.spoken-skills-section .cells{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.spoken-skills-section .cells .cell {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    margin: 10px;
-    padding: 10px 20px;
-    border: 1.5px solid #d3d3d3;  
-    border-radius: 5px;
-    background-color: #FFFFFF; 
-    color: #000000; 
-}
-
-/*makes some space between logos and what I wrote*/
-.spoken-skills-section .cells .cell i {
-    margin-right: 40px; 
-}
-
-@media (max-width: 850px){
-    .hero-section .text h2{
-        font-size: 35px;
-    }
-}
-
-@media (max-width: 740px){
-    .hero-section{
-        flex-direction: column-reverse;
-    }
-    .hero-section .headshot img{
-        width: 300px;
-    }
-}
-/* here im changing the nav bar */
-@media (max-width: 600px){
-    nav{
-        padding: 0 20px;
-    }
-
-    nav .right a{
-        font-size: 22px;
-    }
-
-    nav .right a:last-child{
-        color: var(--text-color);
-        background-color: transparent;
-        padding: 0;
-    }
-
-    nav .right a span{
-        display: none;
-    }
-}
-
-.hero-section{
-    padding: 0 20px;
-}
-.hero-section .text h2{
-    font-size: 30px;
-}
-
-.dfg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
-html {
-    scroll-behavior: smooth;
-}
-
-.dfg img {
-    width: 80%;  
-    height: auto;
-    max-width: 800px; 
-    max-height: 400px;
+    border-radius: 50%;
     object-fit: cover;
-    border-radius: 10px; 
 }
 
+/* Skills Sections */
+.skills-section, .spoken-skills-section {
+    padding: 0 20px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills-section h2, .spoken-skills-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.skills-section h2::after, .spoken-skills-section h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--link-color);
+    margin: 10px auto 0;
+}
+
+.skills-section .text, .spoken-skills-section .text {
+    text-align: center;
+    color: #CCCCCC;
+    margin-bottom: 30px;
+    max-width: 700px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 150px));
+    gap: 15px;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+.skill-item {
+    padding: 20px 15px;
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(123, 164, 219, 0.1);
+    border-color: rgba(123, 164, 219, 0.3);
+}
+
+.skill-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: var(--link-color);
+}
+
+.language-flag {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+}
+
+.skill-name {
+    font-size: 0.95rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 120px));
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 300px;
+    }
+    
+    .skill-item {
+        padding: 15px 10px;
+    }
+}
+
+/* Projects Section */
 .projects-section {
     padding: 50px 20px;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.section_title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .projects-container {
@@ -271,18 +241,16 @@ html {
 }
 
 .project-card {
-    background-color: #1a1a1a;
+    background-color: var(--card-bg);
     border-radius: 10px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+    border: 1px solid rgba(255,255,255,0.1);
 }
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(15, 89, 210, 0.2);
+    box-shadow: 0 10px 20px rgba(123, 164, 219, 0.2);
 }
 
 .project-image {
@@ -304,184 +272,31 @@ html {
 
 .project-content {
     padding: 20px;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
 }
 
 .project-content h3 {
     margin: 0 0 15px 0;
-    color: #FFFFFF;
     font-size: 1.2rem;
-    text-align: left;
-}
-
-.project-content p {
-    margin: 0 0 10px 0;
-    color: #d3d3d3;
-    font-size: 0.95rem;
-    text-align: left;
-    line-height: 1.5;
-    flex-grow: 1;
-}
-
-.project-content a {
-    color: #7BA4DB;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.project-content a:hover {
-    color: #7BA4DB;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .star {
-    font-size: 1rem;
     color: gold;
+    font-size: 1rem;
 }
 
-/* making it responsive for cards */
-@media (max-width: 768px) {
-    .projects-container {
-        grid-template-columns: 1fr;
-    }
-    
-    .project-image {
-        height: 180px;
-    }
-}
-/*
-.projects-section h2 {
-    color: #FFFFFF; 
-    text-align: center; 
-    font-size: 28px; 
-    margin-bottom: 20px; 
+.project-content p {
+    margin: 0 0 15px 0;
+    color: #d3d3d3;
+    font-size: 0.95rem;
+    line-height: 1.5;
 }
 
-.projects-section p, 
-.projects-section h3{
-    color: #FFFFFF;
-    text-align: center; 
-    padding-left: 20px;
-    font-size: 18px; 
-    margin-top: 5px; 
-    margin-bottom: 15px; 
-}
-    */
-.I-am {
-    color: var(--text-color); 
-}
-
-.typewriter {
-    color: var(--link-color); 
-    text-shadow: 0 0 10px var(--link-color);  /* Optional: add a glow effect */
-    border-right: 2px solid var(--link-color); /* Simulate cursor */
-    display: inline-block;
-    padding-right: 2px;
-    animation: blink 0.7s steps(1) infinite; /* Add blinking cursor effect */
-}
-
-@keyframes blink {
-    50% {
-        border-color: transparent;
-    }
-}
-#contact {
-    text-align: center; 
-    padding: 50px 20px; 
-    background-color: #1a1a1a; 
-    color: #ffffff; 
-}
-
-.section_title {
-    color: var(--text-color); 
-    text-align: center;
-    font-size: 2rem; 
-    margin-bottom: 1.5rem;
-}
-
-.contact-info-upper-container {
-    display: inline-flex; 
-    align-items: center; 
-    background-color: #333; 
-    padding: 15px 25px; 
-    border-radius: 10px; 
-    transition: background-color 0.3s ease;
-}
-
-.contact-info-upper-container:hover {
-    background-color: #444; 
-}
-
-.contact-icon {
-    margin-right: 10px; 
-    font-size: 1.5rem; 
-    color: #ffffff; 
-}
-
-.contact-button {
-    font-size: 1.2rem; 
-    color: #ffffff; 
-    text-decoration: none; 
-    transition: color 0.3s ease;
-}
-
-.contact-button:hover {
-    color: #7BA4DB; 
-}
-.title{
-    color: #FFFF;
-}
-
-.Cornell-Tech {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    word-wrap: break-word;
-}
-
-.Cornell-Tech img {
-    width: 80%;  
-    height: auto;
-    max-width: 800px; 
-    max-height: 400px;
-    object-fit: cover;
-    border-radius: 10px; 
-}
-
-.UI-Group {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    word-wrap: break-word;
-}
-
-.UI-Group img {
-    width: 80%;  
-    height: auto;
-    max-width: 800px; 
-    max-height: 400px;
-    object-fit: cover;
-    border-radius: 10px; 
-}
-
-.cell {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.cell:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-}
-
-/* Spotify Embed Styles */
-.spotify-embed {
-    margin-top: 15px;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+.project-content a {
+    color: var(--link-color);
+    font-weight: 500;
 }
 
 /* Now Playing Section */
@@ -511,39 +326,8 @@ html {
 }
 
 .now-playing-header h3 {
-    color: var(--text-color);
     margin: 0;
     font-size: 1.1rem;
-}
-
-.now-playing-content {
-    display: flex;
-    gap: 15px;
-    align-items: center;
-}
-
-.now-playing-cover {
-    width: 80px;
-    height: 80px;
-    border-radius: 6px;
-    object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-.now-playing-info {
-    flex: 1;
-}
-
-.now-playing-info h4 {
-    color: var(--text-color);
-    margin: 0 0 4px 0;
-    font-size: 1rem;
-}
-
-.now-playing-artist {
-    color: #b3b3b3;
-    margin: 0 0 10px 0;
-    font-size: 0.9rem;
 }
 
 .spotify-embed {
@@ -553,31 +337,96 @@ html {
 }
 
 .now-playing-link {
-    color: var(--link-color);
-    font-size: 0.85rem;
-    text-decoration: none;
     display: inline-flex;
     align-items: center;
     gap: 5px;
-    transition: color 0.2s ease;
+    font-size: 0.85rem;
 }
 
-.now-playing-link:hover {
-    color: var(--link-hover);
-    text-decoration: underline;
+/* Typewriter Effect */
+.typewriter {
+    color: var(--link-color);
+    text-shadow: 0 0 10px var(--link-color);
+    border-right: 2px solid var(--link-color);
+    display: inline-block;
+    padding-right: 2px;
+    animation: blink 0.7s steps(1) infinite;
 }
 
-/* Responsive */
-@media (max-width: 500px) {
-    .now-playing-content {
-        flex-direction: column;
-        align-items: flex-start;
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .hero-section {
+        flex-direction: column-reverse;
+        text-align: center;
     }
     
-    .now-playing-cover {
-        width: 100%;
-        height: auto;
-        max-height: 200px;
+    .hero-section .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero-section .links {
+        justify-content: center;
+    }
+    
+    .hero-section .headshot img {
+        width: 300px;
+        margin-bottom: 30px;
     }
 }
 
+@media (max-width: 768px) {
+    nav {
+        padding: 0 20px;
+    }
+    
+    .hero-section, 
+    .skills-section, 
+    .spoken-skills-section {
+        padding: 0 20px;
+    }
+    
+    .hero-section h2 {
+        font-size: 2rem;
+    }
+    
+    .skills-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+    
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    nav .right a span {
+        display: none;
+    }
+    
+    nav .right a:last-child {
+        color: var(--text-color);
+        background-color: transparent;
+        padding: 0;
+    }
+    
+    .skills-grid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        gap: 10px;
+    }
+    
+    .skill-item {
+        padding: 15px 10px;
+    }
+    
+    .skill-icon, .language-flag {
+        font-size: 1.5rem;
+    }
+}
