@@ -7,7 +7,7 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
@@ -19,89 +19,208 @@
     <link rel="icon" type="x-icon" href="favicon.ico">
 </head>
 <body>
-    <nav>   
-        <div class="left">
-            <a href="/">Maria Tane</a>
+    <nav class="main-nav">   
+        <div class="nav-brand">
+            <a href="index.html" class="brand-link">Maria Tane</a>
         </div>
-        <div class="right">
-            <a href="projects.html">My Projects</a>
-            <a href="https://github.com/mariaata" target="_blank" rel="noopeernoreferrer">
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">
+                <i class="fa-solid fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="https://github.com/mariaata" target="_blank" class="nav-link">
                 <i class="fa-brands fa-github"></i>
-                <span>Github</span>
             </a>
-            <a href="https://www.linkedin.com/in/mariatane/" target="_blank" rel="noopeernoreferrer">
+            <a href="https://www.linkedin.com/in/mariatane/" target="_blank" class="nav-link">
                 <i class="fa-brands fa-linkedin"></i>
-                <span>Linkedin</span>
             </a>
-            <a href="mailto: mariatane19@gmail.com">
-                <i class="fa-solid fa-envelope"></i>
-                <span>Email</span>
+            <a href="mailto:mariatane19@gmail.com" class="nav-link cta-button">
+                <i class="fa-solid fa-paper-plane"></i>
+                <span>Contact</span>
             </a>
         </div>
     </nav>
     
     <main>
+        <section class="projects-hero">
+            <div class="section-header">
+                <div class="welcome-badge">
+                    <span>💌 Portfolio</span>
+                </div>
+                <h1>My <span class="gradient-text">Projects</span></h1>
+                <p>Explore my technical projects, research work, and creative endeavors. Each project represents a unique learning journey and problem-solving experience.</p>
+            </div>
+        </section>
+
         <section id="projects" class="projects-section">
-            <h2 class="section_title">My Projects 💌</h2>
-            <span class="section_subtitle"></span>
-            
             <div class="projects-container">
-                <!-- New Project 1: TripSpark -->
-                <div class="project-card">
+                <!-- Project 1: TripSpark -->
+                <div class="project-card featured">
+                    <div class="project-badge">Design & Engineering</div>
                     <div class="project-image">
                         <img src="./TripSpark.png" alt="TripSpark project">
                     </div>
                     <div class="project-content">
-                        <h3>TripSpark <span class="star">⭐</span> Cloud Computing, Fall 2025</h3>
-                        <p>TripSpark helps you curate your perfect travel itinerary for your next trip. Find project details here: 
-                            <b><a href="https://github.com/COMSW4153-Cloud-Six" target="_blank"><em>Github</em></a></b></p>
+                        <div class="project-header">
+                            <h3>TripSpark</h3>
+                            <div class="project-meta">
+                                <span class="project-tag cloud">Cloud Computing</span>
+                                <span class="project-date">Fall 2025</span>
+                            </div>
+                        </div>
+                        <p class="project-description">TripSpark helps you curate your perfect travel itinerary for your next trip. A cloud-based application that generates personalized travel plans using AI recommendations.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/COMSW4153-Cloud-Six" target="_blank" class="project-link">
+                                <i class="fa-brands fa-github"></i>
+                                <span>View Code</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 
-                <!-- New Project 2: EduVision -->
-                <div class="project-card">
+                <!-- Project 2: EduVision -->
+                <div class="project-card featured">
+                    <div class="project-badge">Design</div>
                     <div class="project-image">
                         <img src="./EduVision.png" alt="EduVision project">
                     </div>
                     <div class="project-content">
-                        <h3>EduVision <span class="star">⭐</span> Innovation & Design, Fall 2025</h3>
-                        <p>Prototype for <b><a href="https://www.canva.com/design/DAG53O5Xk-Y/Uhz3zXHwxmu9DxFjWvGrjA/edit?utm_content=DAG53O5Xk-Y&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank"><em>EduVision</em></a></b>, a learning platform that uses educational resources to generate content based on student learning needs.</p>
+                        <div class="project-header">
+                            <h3>EduVision</h3>
+                            <div class="project-meta">
+                                <span class="project-tag design">Innovation & Design</span>
+                                <span class="project-date">Fall 2025</span>
+                            </div>
+                        </div>
+                        <p class="project-description">A learning platform that uses educational resources to generate personalized content based on student learning needs and preferences.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Figma</span>
+                            <span class="tech-tag">Prototyping</span>
+                            <span class="tech-tag">UI/UX</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://www.canva.com/design/DAG53O5Xk-Y/Uhz3zXHwxmu9DxFjWvGrjA/edit?utm_content=DAG53O5Xk-Y&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="project-link">
+                                <i class="fa-solid fa-external-link"></i>
+                                <span>View Prototype</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 
-                <!-- Project 1 -->
-                <div class="project-card">
+                <!-- Project 3: Develop for Good -->
+                <div class="project-card featured">
+                    <div class="project-badge">Design & Product </div>
                     <div class="project-image">
                         <img src="./dfg.png" alt="Develop for Good project">
                     </div>
                     <div class="project-content">
-                        <h3>Develop for Good <span class="star">⭐</span> Product Manager</h3>
-                        <p>Currently working on rebuilding the <b><a href="https://ninosconvalor.org" target="_blank"><em>Ninos Con Valor</em></a></b> website</p>
-                        <p>Read our <b><a href="https://developforgood.notion.site/Ni-os-Con-Valor-A-Case-Study-196fbe7117c08072a4a5c8ebf5df7db7?pvs=4" target="_blank"><em>technical case study</em></a></b></p>
+                        <div class="project-header">
+                            <h3>Develop for Good</h3>
+                            <div class="project-meta">
+                                <span class="project-tag pm">Product Manager</span>
+                                <span class="project-date">2024 - 2025</span>
+                            </div>
+                        </div>
+                        <p class="project-description">Leading the rebuild of Ninos Con Valor website, focusing on creating an accessible and user-friendly platform for the nonprofit organization.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Product Management</span>
+                            <span class="tech-tag">Web Development</span>
+                            <span class="tech-tag">Agile</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://ninosconvalor.org" target="_blank" class="project-link">
+                                <i class="fa-solid fa-globe"></i>
+                                <span>Live Site</span>
+                            </a>
+                            <a href="https://developforgood.notion.site/Ni-os-Con-Valor-A-Case-Study-196fbe7117c08072a4a5c8ebf5df7db7?pvs=4" target="_blank" class="project-link">
+                                <i class="fa-regular fa-file"></i>
+                                <span>Case Study</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 
-                <!-- Project 2 -->
-                <div class="project-card">
+                <!-- Project 4: Cornell Tech Research -->
+                <div class="project-card featured">
+                    <div class="project-badge">Design & Engineering</div>
                     <div class="project-image">
                         <img src="./cornell.png" alt="Cornell Tech project">
                     </div>
                     <div class="project-content">
-                        <h3>Matters of Tech Lab at Cornell Tech <span class="star">⭐</span> Research Intern</h3>
-                        <p>Contributed to the development of prototypes for 
-                            <b><a href="https://arxiv.org/pdf/2410.16634" target="_blank"><em>Why So Serious? Exploring Humor in AAC Through AI-Powered Interfaces</em></a></b></p>
+                        <div class="project-header">
+                            <h3>Cornell Tech Research</h3>
+                            <div class="project-meta">
+                                <span class="project-tag research">Research Intern</span>
+                                <span class="project-date">Summer 2024</span>
+                            </div>
+                        </div>
+                        <p class="project-description">Contributed to the development of prototypes and research for exploring humor in Augmentative and Alternative Communication through AI-powered interfaces.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Research</span>
+                            <span class="tech-tag">AI/ML</span>
+                            <span class="tech-tag">Prototyping</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://arxiv.org/pdf/2410.16634" target="_blank" class="project-link">
+                                <i class="fa-solid fa-book"></i>
+                                <span>Read Paper</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 
-                <!-- Project 3 -->
-                <div class="project-card">
+                <!-- Project 5: Perfect Timer -->
+                <div class="project-card featured">
+                    <div class="project-badge">Design & Engineering</div>
                     <div class="project-image">
                         <img src="./meat.png" alt="UI Group project">
                     </div>
                     <div class="project-content">
-                        <h3> Perfect Timer <span class="star">⭐</span> User Interface Design, Spring 2025</h3>
-                        <p>Find our silly meat and eggs project here: 
-                            <b><a href="https://github.com/aliyatang1/meat-and-eggs.git" target="_blank"><em>Github</em></a></b></p>
+                        <div class="project-header">
+                            <h3>Perfect Timer</h3>
+                            <div class="project-meta">
+                                <span class="project-tag design">UI Design</span>
+                                <span class="project-date">Spring 2025</span>
+                            </div>
+                        </div>
+                        <p class="project-description">A fun cooking timer and simulator application designed to help users perfectly time their meals with a playful interface and customizable alerts.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">UI Design</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">HTML</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/aliyatang1/meat-and-eggs.git" target="_blank" class="project-link">
+                                <i class="fa-brands fa-github"></i>
+                                <span>View Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="cta-card">
+                <div class="cta-content">
+                    <h2>Curious about my work?</h2>
+                    <p>I'm always open to discussing new opportunities and creative projects.</p>
+                    <div class="cta-buttons">
+                        <a href="mailto:mariatane19@gmail.com" class="cta-btn primary">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>Get In Touch</span>
+                        </a>
+                        <a href="index.html" class="cta-btn secondary">
+                            <i class="fa-solid fa-user"></i>
+                            <span>Back to Home</span>
+                        </a>
                     </div>
                 </div>
             </div>

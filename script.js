@@ -7,36 +7,82 @@ const text = [
     "a foodie & travel lover", 
     "a data enthusiast"
 ];
+
 let speed = 100;
-const textElements = document.querySelector(".typewriter");
+const textElement = document.querySelector(".typewriter");
 
 let textIndex = 0;
 let characterIndex = 0;
-
-if (!textElements) {// Check if the elm exists
-    console.error('Element with class "typewriter" not found!');
-}
+let isDeleting = false;
 
 function typeWriter() {
-    if (characterIndex < text[textIndex].length) {
-        textElements.innerHTML += text[textIndex].charAt(characterIndex);  
+    const currentText = text[textIndex];
+    
+    if (!isDeleting) {
+        // Typing
+        textElement.innerHTML = currentText.substring(0, characterIndex + 1);
         characterIndex++;
-        setTimeout(typeWriter, speed);
+        
+        if (characterIndex === currentText.length) {
+            isDeleting = true;
+            setTimeout(typeWriter, 2000); // Pause at end
+        } else {
+            setTimeout(typeWriter, speed);
+        }
     } else {
-        setTimeout(eraseText, 1000);  
+        // Deleting
+        textElement.innerHTML = currentText.substring(0, characterIndex - 1);
+        characterIndex--;
+        
+        if (characterIndex === 0) {
+            isDeleting = false;
+            textIndex = (textIndex + 1) % text.length;
+            setTimeout(typeWriter, 500); // Pause before next word
+        } else {
+            setTimeout(typeWriter, speed / 2);
+        }
     }
 }
 
-function eraseText() {
-    if (textElements.innerHTML.length > 0) {
-        textElements.innerHTML = textElements.innerHTML.slice(0, -1);  // one char at a time, erases
-        setTimeout(eraseText, 50);  // continues erasing
-    } else {
-        textIndex = (textIndex + 1) % text.length;  
-        characterIndex = 0;  
-        setTimeout(typeWriter, 500);  
-    }
+function initScrollAnimations() {
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('section, .skill-card, .language-card').forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(20px)';
+        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(el);
+    });
 }
 
-window.onload = typeWriter; 
+window.addEventListener('DOMContentLoaded', () => {
+    if (textElement) {
+        typeWriter();
+    }
+    initScrollAnimations();
+});
 
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+});
