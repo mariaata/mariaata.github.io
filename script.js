@@ -40,7 +40,24 @@ const descriptors = [
     "passionate about media and entertainment",
     "a researcher", 
     "passionate about tech advocacy", 
-    "a Computer Science and Political Science student"
+    "a Computer Science and Political Science student", 
+    "a previous product lead at non-profit",
+    "building for nonprofits",
+    "a tech analyst",
+    "automating workflows",
+    "building accessible tools with AI",
+    "making tech accessible",
+    "running sprints",
+    "conducting user research interviews",
+    "fluent in Albanian",
+    "querying databases with SQL",
+    "prototyping in Figma",
+    "passionate about HCI",
+    "leading cross-functional teams",
+    "translating client needs into roadmaps",
+    "improving accessibility one interface at a time",
+    "passionate about music & techology",
+    "a soon-to-be Barnumbia grad",
 ];
 function initRotator() {
     const el = document.querySelector(".rotator");
