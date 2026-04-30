@@ -2,263 +2,286 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <title>Projects — Maria Tane</title>
+    <link rel="icon" type="x-icon" href="assets/favicon.ico">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;450;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="stylesheet" href="style.css">
-
-    <title>My Projects - Maria Tane</title>
-    <link rel="icon" type="x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css?v=4">
 </head>
+
 <body>
-    <nav class="main-nav">   
-        <div class="nav-brand">
-            <a href="index.html" class="brand-link">Maria Tane</a>
-        </div>
-        <div class="nav-links">
-            <a href="index.html" class="nav-link">
-                <i class="fa-solid fa-home"></i>
-                <span>Home</span>
-            </a>
-            <a href="https://github.com/mariaata" target="_blank" class="nav-link">
-                <i class="fa-brands fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/mariatane/" target="_blank" class="nav-link">
-                <i class="fa-brands fa-linkedin"></i>
-            </a>
-            <a href="mailto:mariatane19@gmail.com" class="nav-link cta-button">
-                <i class="fa-solid fa-paper-plane"></i>
-                <span>Contact</span>
-            </a>
+    <nav class="bar">
+        <div class="bar-in">
+            <div class="bar-l">
+                <a href="index.html" class="bar-brand">
+                    <span class="logo">M</span>
+                    maria.tane
+                </a>
+                <span class="bar-chip"><span class="pulse"></span><span>online</span></span>
+            </div>
+            <div class="bar-r">
+                <a href="index.html" class="bar-link">/home</a>
+                <a href="projects.html" class="bar-link active">/projects</a>
+                <a href="https://github.com/mariaata" target="_blank" rel="noopener" class="bar-link">/github</a>
+                <a href="https://www.linkedin.com/in/mariatane/" target="_blank" rel="noopener" class="bar-link">/linkedin</a>
+                <a href="/cdn-cgi/l/email-protection#f69b97849f9782979893c7cfb6919b979f9ad895999b" class="bar-link cta">say hi →</a>
+            </div>
         </div>
     </nav>
-    
+
     <main>
-        <section class="projects-hero">
-            <div class="section-header">
-                <div class="welcome-badge">
-                    <span>💌 Portfolio</span>
+        <section class="pj-hero">
+            <div>
+                <div class="intro-eyebrow">
+                    <span class="live-dot"></span>
+                    <span>/projects · 2024 → 2026</span>
                 </div>
-                <h1>My <span class="gradient-text">Projects</span></h1>
-                <p>Explore my technical projects, design projects, and research work.</p>
+                <h1>Selected <em>work</em> &amp; case studies.</h1>
+                <p>
+                    A mix of engineering, product, and design, including research at Cornell Tech,
+                    cloud applications, nonprofit website rebuilds, and small experiments
+                    in between!
+                </p>
             </div>
-        </section>
-        
-        <section id="projects" class="projects-section">
-            <div class="projects-container">
-                <!-- Project 1: Humor Project -->
-                <div class="project-card featured">
-                    <div class="project-badge">Design & Engineering</div>
-                    <div class="project-image">
-                        <img src="./HumorProjectRank.png" alt="Humor project">
-                    </div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3>Humor Study</h3>
-                            <div class="project-meta">
-                                <span class="project-tag pm">COMSW4995 - Topic in Computer Science</span>
-                                <span class="project-date">2026</span>
-                            </div>
-                        </div>
-                        <p class="project-description">Ranking System for Memes. Users can generate their own captions to pictures they upload</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Engineering</span>
-                            <span class="tech-tag">Web Development</span>
-                            <span class="tech-tag">TypeScript</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://humor-project-5.vercel.app" target="_blank" class="project-link">
-                                <i class="fa-solid fa-globe"></i>
-                                <span>Live Site</span>
-                            </a>
-                            <a href="https://admin-panel-vert.vercel.app/login" target="_blank" class="project-link">
-                                <i class="fa-regular fa-file"></i>
-                                <span>Database / Admin Dashboard</span>
-                            </a>
-                        </div>
-                    </div>
+            <div class="pj-hero-meta">
+                <div class="pj-meta-cell">
+                    <div class="pj-meta-label">Total</div>
+                    <div class="pj-meta-val"><em>06</em> projects</div>
                 </div>
-                
-                <!-- Project 2: TripSpark -->
-                <div class="project-card featured">
-                    <div class="project-badge">Design & Engineering</div>
-                    <div class="project-image">
-                        <img src="./TripSpark.png" alt="TripSpark project">
-                    </div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3>TripSpark</h3>
-                            <div class="project-meta">
-                                <span class="project-tag cloud">Cloud Computing</span>
-                                <span class="project-date">Fall 2025</span>
-                            </div>
-                        </div>
-                        <p class="project-description">TripSpark helps you curate your perfect travel itinerary for your next trip. A cloud-based application that generates personalized travel plans using AI recommendations.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">TypeScript</span>
-                            <span class="tech-tag">Google Cloud</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/COMSW4153-Cloud-Six" target="_blank" class="project-link">
-                                <i class="fa-brands fa-github"></i>
-                                <span>View Code</span>
-                            </a>
-                        </div>
-                    </div>
+                <div class="pj-meta-cell">
+                    <div class="pj-meta-label">Latest</div>
+                    <div class="pj-meta-val">2026</div>
                 </div>
-                
-                <!-- Project 3: EduVision -->
-                <div class="project-card featured">
-                    <div class="project-badge">Design</div>
-                    <div class="project-image">
-                        <img src="./EduVision.png" alt="EduVision project">
-                    </div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3>EduVision</h3>
-                            <div class="project-meta">
-                                <span class="project-tag design">Innovation & Design</span>
-                                <span class="project-date">Fall 2025</span>
-                            </div>
-                        </div>
-                        <p class="project-description">A learning platform that uses educational resources to generate personalized content based on student learning needs and preferences.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Figma</span>
-                            <span class="tech-tag">Prototyping</span>
-                            <span class="tech-tag">UI/UX</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://www.canva.com/design/DAG53O5Xk-Y/Uhz3zXHwxmu9DxFjWvGrjA/edit?utm_content=DAG53O5Xk-Y&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="project-link">
-                                <i class="fa-solid fa-external-link"></i>
-                                <span>View Prototype</span>
-                            </a>
-                        </div>
-                    </div>
+                <div class="pj-meta-cell">
+                    <div class="pj-meta-label">Spans</div>
+                    <div class="pj-meta-val">3 disciplines</div>
                 </div>
-                
-                <!-- Project 4: Develop for Good -->
-                <div class="project-card featured">
-                    <div class="project-badge">Design & Product</div>
-                    <div class="project-image">
-                        <img src="./dfg.png" alt="Develop for Good project">
-                    </div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3>Develop for Good</h3>
-                            <div class="project-meta">
-                                <span class="project-tag pm">Product Manager</span>
-                                <span class="project-date">2024 - 2025</span>
-                            </div>
-                        </div>
-                        <p class="project-description">Leading the rebuild of Ninos Con Valor website, focusing on creating an accessible and user-friendly platform for the nonprofit organization.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Product Management</span>
-                            <span class="tech-tag">Web Development</span>
-                            <span class="tech-tag">Agile</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://ninosconvalor.org" target="_blank" class="project-link">
-                                <i class="fa-solid fa-globe"></i>
-                                <span>Live Site</span>
-                            </a>
-                            <a href="https://developforgood.notion.site/Ni-os-Con-Valor-A-Case-Study-196fbe7117c08072a4a5c8ebf5df7db7?pvs=4" target="_blank" class="project-link">
-                                <i class="fa-regular fa-file"></i>
-                                <span>Case Study</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 5: Cornell Tech Research -->
-                <div class="project-card featured">
-                    <div class="project-badge">Design & Engineering</div>
-                    <div class="project-image">
-                        <img src="./cornell.png" alt="Cornell Tech project">
-                    </div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3>Cornell Tech Research</h3>
-                            <div class="project-meta">
-                                <span class="project-tag research">Research Intern</span>
-                                <span class="project-date">Summer 2024</span>
-                            </div>
-                        </div>
-                        <p class="project-description">Contributed to the development of prototypes and research for exploring humor in Augmentative and Alternative Communication through AI-powered interfaces.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Research</span>
-                            <span class="tech-tag">AI/ML</span>
-                            <span class="tech-tag">Prototyping</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://arxiv.org/pdf/2410.16634" target="_blank" class="project-link">
-                                <i class="fa-solid fa-book"></i>
-                                <span>Read Paper</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 6: Perfect Timer -->
-                <div class="project-card featured">
-                    <div class="project-badge">Design & Engineering</div>
-                    <div class="project-image">
-                        <img src="./meat.png" alt="UI Group project">
-                    </div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3>Perfect Timer</h3>
-                            <div class="project-meta">
-                                <span class="project-tag design">UI Design</span>
-                                <span class="project-date">Spring 2025</span>
-                            </div>
-                        </div>
-                        <p class="project-description">A fun cooking timer and simulator application designed to help users perfectly time their meals with a playful interface and customizable alerts.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">UI Design</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">HTML</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/aliyatang1/meat-and-eggs.git" target="_blank" class="project-link">
-                                <i class="fa-brands fa-github"></i>
-                                <span>View Code</span>
-                            </a>
-                        </div>
-                    </div>
+                <div class="pj-meta-cell">
+                    <div class="pj-meta-label">Focus</div>
+                    <div class="pj-meta-val"><em>data + ux</em></div>
                 </div>
             </div>
         </section>
 
-        <section class="cta-section">
-            <div class="cta-card">
-                <div class="cta-content">
-                    <h2>Curious about my work?</h2>
-                    <p>I'm always open to discussing new opportunities and creative projects.</p>
-                    <div class="cta-buttons">
-                        <a href="mailto:mariatane19@gmail.com" class="cta-btn primary">
-                            <i class="fa-solid fa-envelope"></i>
-                            <span>Get In Touch</span>
-                        </a>
-                        <a href="index.html" class="cta-btn secondary">
-                            <i class="fa-solid fa-user"></i>
-                            <span>Back to Home</span>
-                        </a>
+        <section class="pj-tools">
+            <div class="pj-filters">
+                <button class="pj-filter active" data-filter="all">All</button>
+                <button class="pj-filter" data-filter="eng">Engineering</button>
+                <button class="pj-filter" data-filter="design">Design</button>
+                <button class="pj-filter" data-filter="research">Research</button>
+                <button class="pj-filter" data-filter="pm">Product</button>
+            </div>
+            <div class="pj-count"><span data-count>06</span> shown</div>
+        </section>
+
+        <section class="masonry">
+            <article class="pj-card" data-cat="eng design">
+                <div class="pj-img-wrap">
+                    <span class="pj-num-badge">N° 01</span>
+                    <span class="pj-cat-badge">Eng + Design</span>
+                    <img src="assets/HumorProjectRank.png" alt="Humor Study">
+                </div>
+                <div class="pj-content">
+                    <h3>Humor <em>Study</em></h3>
+                    <div class="pj-meta">
+                        <span>2026</span>
+                        <span>COMSW4995</span>
+                    </div>
+                    <p>A ranking system for memes — users generate captions for uploaded
+                       pictures, then vote and rank submissions.</p>
+                    <div class="pj-tech">
+                        <span class="tk"><span class="tk-dot"></span>TypeScript</span>
+                        <span class="tk"><span class="tk-dot"></span>Web</span>
+                    </div>
+                    <div class="pj-links">
+                        <a class="pj-link" href="https://humor-project-5.vercel.app" target="_blank" rel="noopener">Live <span class="arr">↗</span></a>
+                        <a class="pj-link" href="https://admin-panel-vert.vercel.app/login" target="_blank" rel="noopener">Admin <span class="arr">↗</span></a>
                     </div>
                 </div>
+            </article>
+
+            <article class="pj-card" data-cat="eng">
+                <div class="pj-img-wrap">
+                    <span class="pj-num-badge">N° 02</span>
+                    <span class="pj-cat-badge">Cloud</span>
+                    <img src="assets/TripSpark.png" alt="TripSpark">
+                </div>
+                <div class="pj-content">
+                    <h3><em>TripSpark</em></h3>
+                    <div class="pj-meta">
+                        <span>Fall 2025</span>
+                        <span>Cloud Computing</span>
+                    </div>
+                    <p>A cloud-based application that generates personalized travel
+                       itineraries using AI recommendations on Google Cloud.</p>
+                    <div class="pj-tech">
+                        <span class="tk"><span class="tk-dot"></span>Python</span>
+                        <span class="tk"><span class="tk-dot"></span>TypeScript</span>
+                        <span class="tk"><span class="tk-dot"></span>GCP</span>
+                    </div>
+                    <div class="pj-links">
+                        <a class="pj-link" href="https://github.com/COMSW4153-Cloud-Six" target="_blank" rel="noopener">Code <span class="arr">↗</span></a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="pj-card" data-cat="design">
+                <div class="pj-img-wrap">
+                    <span class="pj-num-badge">N° 03</span>
+                    <span class="pj-cat-badge">Design</span>
+                    <img src="assets/EduVision.png" alt="EduVision">
+                </div>
+                <div class="pj-content">
+                    <h3><em>EduVision</em></h3>
+                    <div class="pj-meta">
+                        <span>Fall 2025</span>
+                        <span>Innovation &amp; Design</span>
+                    </div>
+                    <p>A learning platform that uses educational resources to generate
+                       personalized content based on student needs.</p>
+                    <div class="pj-tech">
+                        <span class="tk"><span class="tk-dot"></span>Figma</span>
+                        <span class="tk"><span class="tk-dot"></span>UI / UX</span>
+                    </div>
+                    <div class="pj-links">
+                        <a class="pj-link" href="https://www.canva.com/design/DAG53O5Xk-Y/Uhz3zXHwxmu9DxFjWvGrjA/edit?utm_content=DAG53O5Xk-Y&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noopener">Prototype <span class="arr">↗</span></a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="pj-card" data-cat="pm design">
+                <div class="pj-img-wrap">
+                    <span class="pj-num-badge">N° 04</span>
+                    <span class="pj-cat-badge">Product</span>
+                    <img src="assets/dfg.png" alt="Develop for Good">
+                </div>
+                <div class="pj-content">
+                    <h3>Develop <em>for Good</em></h3>
+                    <div class="pj-meta">
+                        <span>2024 – 2025</span>
+                        <span>PM</span>
+                    </div>
+                    <p>Led the rebuild of the Niños Con Valor website — focused on building
+                       an accessible, user-friendly platform for the nonprofit.</p>
+                    <div class="pj-tech">
+                        <span class="tk"><span class="tk-dot"></span>Product Mgmt</span>
+                        <span class="tk"><span class="tk-dot"></span>Agile</span>
+                    </div>
+                    <div class="pj-links">
+                        <a class="pj-link" href="https://ninosconvalor.org" target="_blank" rel="noopener">Live <span class="arr">↗</span></a>
+                        <a class="pj-link" href="https://developforgood.notion.site/Ni-os-Con-Valor-A-Case-Study-196fbe7117c08072a4a5c8ebf5df7db7?pvs=4" target="_blank" rel="noopener">Case study <span class="arr">↗</span></a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="pj-card tape" data-cat="research design">
+                <div class="pj-img-wrap">
+                    <span class="pj-num-badge">N° 05</span>
+                    <span class="pj-cat-badge">Research</span>
+                    <img src="assets/cornell.png" alt="Cornell Tech research">
+                </div>
+                <div class="pj-content">
+                    <h3>Cornell <em>Tech</em></h3>
+                    <div class="pj-meta">
+                        <span>Summer 2024</span>
+                        <span>Research Intern</span>
+                    </div>
+                    <p>Contributed to prototypes &amp; research exploring humor in
+                       Augmentative and Alternative Communication via AI interfaces.
+                       Published on arXiv.</p>
+                    <div class="pj-tech">
+                        <span class="tk"><span class="tk-dot"></span>Research</span>
+                        <span class="tk"><span class="tk-dot"></span>AI / ML</span>
+                    </div>
+                    <div class="pj-links">
+                        <a class="pj-link" href="https://arxiv.org/pdf/2410.16634" target="_blank" rel="noopener">Read paper <span class="arr">↗</span></a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="pj-card" data-cat="design eng">
+                <div class="pj-img-wrap">
+                    <span class="pj-num-badge">N° 06</span>
+                    <span class="pj-cat-badge">UI Design</span>
+                    <img src="assets/meat.png" alt="Perfect Timer">
+                </div>
+                <div class="pj-content">
+                    <h3>Perfect <em>Timer</em></h3>
+                    <div class="pj-meta">
+                        <span>Spring 2025</span>
+                        <span>UI Design</span>
+                    </div>
+                    <p>A cooking timer &amp; simulator with a playful interface and
+                       customizable alerts. Built with a small team.</p>
+                    <div class="pj-tech">
+                        <span class="tk"><span class="tk-dot"></span>JavaScript</span>
+                        <span class="tk"><span class="tk-dot"></span>UI Design</span>
+                    </div>
+                    <div class="pj-links">
+                        <a class="pj-link" href="https://github.com/aliyatang1/meat-and-eggs.git" target="_blank" rel="noopener">Code <span class="arr">↗</span></a>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="contact-block">
+            <h2>Curious about <em>my work?</em></h2>
+            <p>Open to full-time product, design, &amp; research opportunities.</p>
+            <div class="intro-actions">
+                <a href="/cdn-cgi/l/email-protection#bad7dbc8d3dbcedbd4df8b83faddd7dbd3d694d9d5d7" class="btn btn-primary">
+                    Get in touch <span class="arrow">↗</span>
+                </a>
+                <a href="index.html" class="btn btn-ghost">
+                    Back to home
+                </a>
             </div>
         </section>
     </main>
-    
-    <script src="script.js"></script>
+
+    <footer class="foot">
+        <div class="foot-in">
+            <div>
+                <p class="foot-h">
+                    Excited to <em>build?</em> <a href="/cdn-cgi/l/email-protection#462b27342f2732272823777f06212b272f2a6825292b">Let's connect!</a>.
+                </p>
+                <p class="foot-sub">Open to full-time product, design &amp; research opportunities. NYC or remote.</p>
+            </div>
+            <div class="foot-col">
+                <h4>Sitemap</h4>
+                <ul>
+                    <li><a href="index.html">/home</a></li>
+                    <li><a href="projects.html">/projects</a></li>
+                    <li><a href="Maria Tane, Resume.pdf" target="_blank" rel="noopener">/résumé <span class="arrow">↗</span></a></li>
+                </ul>
+            </div>
+            <div class="foot-col">
+                <h4>Elsewhere</h4>
+                <ul>
+                    <li><a href="https://github.com/mariaata" target="_blank" rel="noopener">GitHub <span class="arrow">↗</span></a></li>
+                    <li><a href="https://www.linkedin.com/in/mariatane/" target="_blank" rel="noopener">LinkedIn <span class="arrow">↗</span></a></li>
+                    <li><a href="/cdn-cgi/l/email-protection#fb969a89929a8f9a959ecac2bb9c969a9297d5989496">Email <span class="arrow">↗</span></a></li>
+                </ul>
+            </div>
+            <div class="foot-col">
+                <h4>Colophon</h4>
+                <ul>
+                    <li style="color: var(--ink-3); font-size: 0.85rem;">Instrument Serif</li>
+                    <li style="color: var(--ink-3); font-size: 0.85rem;">Inter</li>
+                    <li style="color: var(--ink-3); font-size: 0.85rem;">JetBrains Mono</li>
+                </ul>
+            </div>
+        </div>
+        <div class="foot-bot">
+            <span>© 2026 Maria Tane · NYC</span>
+            <span class="ascii">✺ ─── ✺ ─── ✺</span>
+            <span>v2.1 · last updated apr 2026</span>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="script.js?v=4"></script>
 </body>
 </html>
