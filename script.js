@@ -34,7 +34,7 @@ const descriptors = [
     "a Barnard senior at Columbia University",
     "passionate about data ethics",
     "building interfaces",
-    "a foodie & traveler (@teetravelbites)",
+    "a foodie & traveler",
     "a problem-solver", 
     "a creative thinker",
     "passionate about media and entertainment",
